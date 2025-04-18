@@ -13,7 +13,7 @@ function sendMessage() {
     appendMessage('User', userInput);
 
     // Send the user's message to the backend (Python) and get the response
-    fetch('/get_response', {
+    fetch('https://your-backend-url.com/get_response', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
